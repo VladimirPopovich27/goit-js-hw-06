@@ -8,8 +8,8 @@ function categoriesCounter(rootEl) {
 function printCategoriesContent(itemEls) {
   itemEls.forEach((element) => {
     console.log("======================");
-    console.log(`Category: ${element.querySelector("h2").textContent};`);
-    console.log(`Items: ${element.querySelectorAll("li").length};`);
+    console.log(`Category:`, element.firstElementChild.textContent);
+    console.log(`Items:`, element.lastElementChild.children.length);
   });
 }
 
